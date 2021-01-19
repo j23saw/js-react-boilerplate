@@ -32,9 +32,11 @@
     "@types/firefox-webext-browser": "^82.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "postcss": "^8.2.4",
     "prettier": "^2.2.1",
     "react": "npm:@esm-bundle/react@^17.0.1-fix.0",
     "react-dom": "npm:@esm-bundle/react-dom@^17.0.1",
+    "rollup-plugin-postcss": "^4.0.0",
     "webextension-polyfill": "^0.7.0"
   },
   "devDependencies": {

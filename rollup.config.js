@@ -2,7 +2,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import alias from '@rollup/plugin-alias'
 import babel from '@rollup/plugin-babel'
-
+import postcss from 'rollup-plugin-postcss'
 import { chromeExtension, simpleReloader } from 'rollup-plugin-chrome-extension'
 import { emptyDir } from 'rollup-plugin-empty-dir'
 import zip from 'rollup-plugin-zip'
@@ -38,6 +38,9 @@ export default {
     chromeExtension(),
     // Adds a Chrome extension reloader during watch mode
     simpleReloader(),
+    postcss({
+      plugins: []
+    }),
     alias({ entries: aliases }),
     babel({
       // Do not transpile dependencies
